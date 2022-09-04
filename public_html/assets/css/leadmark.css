@@ -202,6 +202,22 @@ a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
 
+.icons{
+  color: white;
+  font-size: 30px;
+}
+
+.icons:hover{
+  color: #2489b0;
+}
+
+.icons-arrange{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 10px;
+}
+
 pre,
 code,
 kbd,
