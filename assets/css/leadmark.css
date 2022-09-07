@@ -84,6 +84,10 @@ body {
   background-color: #fff;
 }
 
+/* .header_img {
+  padding-bottom: 30px;
+} */
+
 [tabindex='-1']:focus {
   outline: 0 !important;
 }
@@ -176,6 +180,17 @@ sub {
 
 sup {
   top: -0.5em;
+}
+
+.learnmore {
+  color: black;
+  font-size: 22px;
+  align-items: center;
+  font-family: 'IM Fell Great Primer', serif;
+}
+
+.learnmore:hover {
+  color: #2489b0;
 }
 
 a {
@@ -11867,7 +11882,7 @@ textarea.form-control {
   position: relative;
   height: 100vh;
   min-height: 500px;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
+  background: url(../imgs/headerbg.jpeg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
