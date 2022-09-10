@@ -11664,11 +11664,12 @@ textarea.form-control {
 }
 
 .navbar .navbar-brand img {
-  width: 60px;
+  width: 70px;
 }
 
+/* About us, SDG Teams etc  */
 .navbar .nav-link {
-  font-size: 13px;
+  font-size: 16px;   
   font-weight: 600;
 }
 
