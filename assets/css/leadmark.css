@@ -250,7 +250,8 @@ a:not([href]):not([tabindex]):focus {
 
 .icons {
   color: white;
-  font-size: 30px;
+  align-items: center;
+  font-size: 25px;
 }
 
 .icons:hover {
@@ -260,8 +261,10 @@ a:not([href]):not([tabindex]):focus {
 .icons-arrange {
   display: flex;
   align-items: center;
+
   gap: 20px;
-  margin-left: 10px;
+ 
+  margin-left: 50px;
 }
 
 pre,
