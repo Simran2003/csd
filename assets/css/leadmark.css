@@ -249,7 +249,8 @@ a:not([href]):not([tabindex]):focus {
 
 .icons {
   color: white;
-  font-size: 30px;
+  align-items: center;
+  font-size: 25px;
 }
 
 .icons:hover {
@@ -259,8 +260,10 @@ a:not([href]):not([tabindex]):focus {
 .icons-arrange {
   display: flex;
   align-items: center;
+
   gap: 20px;
-  margin-left: 10px;
+
+  margin-left: 50px;
 }
 
 pre,
@@ -12287,3 +12290,19 @@ section#counter-stats {
 }
 
 /*/ end count stats /*/
+
+.font {
+  font-family: 'Roboto', sans-serif;
+  size: 2px;
+  opacity: 1;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.font1 {
+  font-family: 'Open Sans', sans-serif;
+  size: 2px;
+  opacity: 1;
+  font-weight: bold;
+  line-height: 1.5;
+  font-weight: bold;
+}
