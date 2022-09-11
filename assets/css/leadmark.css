@@ -112,15 +112,14 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.animate-charcter
-{
-   text-transform: uppercase;
+.animate-charcter {
+  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #2180c4 0%,
-    #22b450 29%,  
+    #22b450 29%,
     #2cb54c 30%,
-    #22b450  100%
+    #22b450 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -130,10 +129,10 @@ p {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 3s linear infinite;
+  animation: textclip 1.5s linear infinite;
   /*display: inline-block;*/
-      font-size: 50px;
-      text-align: center;
+  font-size: 50px;
+  text-align: center;
 }
 
 @keyframes textclip {
@@ -11698,7 +11697,7 @@ textarea.form-control {
 
 /* About us, SDG Teams etc  */
 .navbar .nav-link {
-  font-size: 16px;   
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -12244,36 +12243,36 @@ textarea.form-control {
   visibility: visible;
 }
 
-.overview{
-    /* font-size: 30px; */
-    /* text-align: center; */
-    margin: 60px 40px;
-    margin-bottom: 100px;
+.overview {
+  /* font-size: 30px; */
+  /* text-align: center; */
+  margin: 60px 40px;
+  margin-bottom: 100px;
 }
 
-.overview-head{
-   text-align: center;
-   font-weight: bold;
+.overview-head {
+  text-align: center;
+  font-weight: 600;
 }
 
-.overview-numbers{
+.overview-numbers {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.overview-text{
-  font-size: 120px;
+.overview-text {
+  font-size: 80px;
   font-weight: bold;
 }
 
-.overview-text2{
-  font-size: 20px;
+.overview-text2 {
+  font-size: 15px;
   /* font-weight: bold; */
   margin-left: 10px;
 }
 
-.overview-col{
+.overview-col {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -12282,9 +12281,9 @@ textarea.form-control {
 /*/ start count stats /*/
 
 section#counter-stats {
-	display: flex;
-	justify-content: center;
-	margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
 }
 
 /*/ end count stats /*/
