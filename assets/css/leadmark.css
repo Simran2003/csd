@@ -12291,11 +12291,11 @@ section#counter-stats {
 
 /*/ end count stats /*/
 
-.font {
+/* .font {
   font-family: 'Roboto', sans-serif;
   size: 2px;
   opacity: 1;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
 }
 .font1 {
@@ -12305,4 +12305,4 @@ section#counter-stats {
   font-weight: bold;
   line-height: 1.5;
   font-weight: bold;
-}
+} */
