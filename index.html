@@ -434,77 +434,77 @@
       <ul class="timeline-ul">
 
         
-        <li>
+        <li class="timeline-li">
           <div class="pot0 pot" >
             <time>August 2021</time>
             <p><b>PHASE 1</b><br>Establishment of CSD</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
           <div class="pot1 pot">
             <time>September 2021</time>
             <p>Establishment of SDG Teams and Selection of Members</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
           <div class="pot0 pot">
             <time>October 2021</time>
             <p>Planning and Conceptualization of Events and Activities</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
           <div class="pot1 pot">
             <time>November 2021</time>
             <p>Conducting Events and Activities</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
           <div class="pot0 pot">
             <time>December 2021</time>
             <p>Evaluation and Conclusion of Phase 1</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
           <div class="pot1 pot">
             <time>January 2022</time>
             <p><b>PHASE 2</b><br>Conceptualization of Phase 2</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
           <div class="pot0 pot">
             <time>February 2022</time>
             <p>Conceptualization of Phase 2 Campaigns</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
           <div class="pot1 pot">
             <time>March 2022</time>
             <p><b>PHASE 2 Kickstart</b><br>Launch of Campaigns</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
           <div class="pot0 pot">
             <time>April 2022</time>
             <p>Conduction of Activities and Events</p>
           </div>
         </li>
 
-        <li>
+        <li class="timeline-li">
             <div class="pot1 pot">
               <time>May 2022</time>
               <p>Conduct of Endline Surveys</p>
             </div>
         </li>
   
-        <li>
+        <li class="timeline-li">
         <div class="pot0 pot">
             <time>June 2022</time>
             <p>Evaluation and Conclusion of Phase 2</p>
@@ -777,11 +777,33 @@
     <!-- LeadMark js -->
     <script src="assets/js/leadmark.js"></script>
     <script src="assets/js/counter.js"></script>
-    <!-- Campaign 2 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
     <script>
-        baguetteBox.run('.tz-gallery');
+        var items = document.getElementsByClassName("timeline-li")
+
+function isItemInView(item){
+  var rect = item.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isItemInView(items[i])) {
+        items[i].classList.add("show");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+
     </script>
-    <!-- Campaign 2 -->
 </body>
 </html>
