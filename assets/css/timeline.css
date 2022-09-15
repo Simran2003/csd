@@ -222,9 +222,9 @@ time {
 
 @media screen and (max-width: 900px) {
   .timeline-ul li div {
-    width: 250px;
+    width: 135px;
   }
   .timeline-ul li:nth-child(even) div {
-    left: -289px;
+    left: -169px;
   }
 }
