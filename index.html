@@ -25,8 +25,17 @@
 <link rel="stylesheet" href="./assets/css/timeline.css">
 
 <!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<!--  -->
+
+<!-- SLider -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css'>
+<link rel="text/html" href="./style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<!--  -->
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -362,74 +371,13 @@
                         </div>
                     </div>                                                     
                 </div>
-                
-               
-                <!-- <div class="col-md-6 col-lg-4 branding new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div> 
-                    </div>
-                </div> 
-                <div class="col-md-6 col-lg-4 branding">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>                                                     
-                </div> 
-                <div class="col-md-6 col-lg-4 branding new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>                                                    
-                </div> 
-                <div class="col-md-6 col-lg-4 branding">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>                                                      
-                </div> 
-                <div class="col-md-6 col-lg-4 branding">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>                                                   
-                </div> -->
             </div>   
         </div>            
     </section>
     <!-- End of portfolio section -->
-<!-- Start of Timeline section -->
-<section class="timeline">
+
+    <!-- Start of Timeline section -->
+<!-- <section class="timeline">
     <h1 class="timeline-h1 section">Timeline</h1>
     
     <div class="time-line-first-div">
@@ -519,8 +467,9 @@
       
     </div>
    
- </section>
+ </section> -->
 <!-- End of Timeline Section  -->
+
     <!-- Blog Section -->
     <section class="section" id="blog">
         <div class="container">
@@ -581,198 +530,12 @@
                 </div>
               </div>
           
-              <script type="text/javascript">
-              var slides = document.querySelectorAll('.slide');
-              var btns = document.querySelectorAll('.btn');
-              let currentSlide = 1;
-          
-              // Javascript for image slider manual navigation
-              var manualNav = function(manual){
-                slides.forEach((slide) => {
-                  slide.classList.remove('active');
-          
-                  btns.forEach((btn) => {
-                    btn.classList.remove('active');
-                  });
-                });
-          
-                slides[manual].classList.add('active');
-                btns[manual].classList.add('active');
-              }
-          
-              btns.forEach((btn, i) => {
-                btn.addEventListener("click", () => {
-                  manualNav(i);
-                  currentSlide = i;
-                });
-              });
-          
-              // Javascript for image slider autoplay navigation
-              var repeat = function(activeClass){
-                let active = document.getElementsByClassName('active');
-                let i = 1;
-          
-                var repeater = () => {
-                  setTimeout(function(){
-                    [...active].forEach((activeSlide) => {
-                      activeSlide.classList.remove('active');
-                    });
-          
-                  slides[i].classList.add('active');
-                  btns[i].classList.add('active');
-                  i++;
-          
-                  if(slides.length == i){
-                    i = 0;
-                  }
-                  if(i >= slides.length){
-                    return;
-                  }
-                  repeater();
-                }, 4000);
-                }
-                repeater();
-              }
-              repeat();
-              </script>
+              
         </div>
-            <!--image slider start-->
-           <!--- <div class="gallery">
-    <div class="slider">
-        <div class="slides">
-          <!--radio buttons start--
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <input type="radio" name="radio-btn" id="radio5">
-          <input type="radio" name="radio-btn" id="radio6">
-          <!--radio buttons end-->
-          <!--slide images start--
-          <div class="slide first">
-            <img src="assets\imgs\IMG1.jpeg" alt="">
-          </div>
-          <div class="slide first">
-            <img src="assets\imgs\IMG2.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="assets\imgs\IMG3.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="assets\imgs\IMG4.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="assets\imgs\IMG5.jpeg" alt="">
-          </div>
-          <div class="slide">
-            <img src="assets\imgs\IMG6.jpeg" alt="">
-          </div>
-          <!--slide images end-->
-          <!--automatic navigation start--
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            <div class="auto-btn5"></div>
-            <div class="auto-btn6"></div>
-          </div>
-          <!--automatic navigation end--
-        </div>
-        <!--manual navigation start--
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-          <label for="radio5" class="manual-btn"></label>
-          <label for="radio6" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end--
-      </div>
-      <!--image slider end--
-  
-      <script type="text/javascript">
-      var counter = 1;
-      setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 6){
-          counter = 1;
-        }
-      }, 5000);
-      </script>-->
+            
         </div>
     
         </section>
-<!---
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets\imgs\IMG1.jpeg" alt="PICTURE" class="card-img-top w-100">
-                        <!-- <div class="card-body">                         
-                            <h6 class="card-title"></h6>
-                            <p></p>
-                          <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div> 
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets\imgs\IMG2.jpeg" alt="PICTURE" class="card-img-top w-100">
-                        <!-- <div class="card-body">                         
-                            <h6 class="card-title"></h5>
-                            <p></p>
-                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div> 
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets\imgs\IMG3.jpeg" alt="PICTURE" class="card-img-top w-100">
-                        <!-- <div class="card-body">                         
-                            <h6 class="card-title"></h6>
-                            <p></p>
-                           <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets\imgs\IMG4.jpeg" alt="PICTURE" class="card-img-top w-100">
-                        <!-- <div class="card-body">                         
-                            <h6 class="card-title"></h6>
-                            <p></p>
-                          <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div> 
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets\imgs\IMG5.jpeg" alt="PICTURE" class="card-img-top w-100">
-                        <!-- <div class="card-body">                         
-                            <h6 class="card-title"></h5>
-                            <p></p>
-                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div> 
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets\imgs\IMG6.jpeg" alt="PICTURE" class="card-img-top w-100">
-                        <!-- <div class="card-body">                         
-                            <h6 class="card-title"></h6>
-                            <p></p>
-                           <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
 
     <!-- End of Blog Section -->
 
@@ -852,121 +615,172 @@
 
     <!-- Campaign Section -->
 
-    <div class="container gallery-container">
+    <!-- Mobile Screen -->
 
-        <h1 class="section-title mb-0 text-center">CAMPAIGNS</h1>
-        <h5 class="section-subtitle mb-5 text-center">WE AIM TO SUSTAIN</h1>
-        
-        <div class="tz-gallery">
-    
-            <div class="row">
-    
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox a1" href="\#">
-                        <img src="assets\imgs\Campaigns\Adira.png" alt="Bridge">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox a2" href="\#">
-                        <img src="assets\imgs\Campaigns\Cognito.png" alt="Bridge">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox a3" href="\#">
-                        <img src="assets\imgs\Campaigns\Eudaimonia.png" alt="Bridge">
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-8">
-                    <a class="lightbox a4" href="\#">
-                        <img src="assets\imgs\Campaigns\Inayat.png" alt="Bridge">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox a5" href="\#">
-                        <img src="assets\imgs\Campaigns\Pejas.png" alt="Bridge">
-                    </a>
-                </div> 
-                <!-- <div class="col-sm-6 col-md-4">
-                    <a class="lightbox a6" href="\#">
-                        <img src="assets\imgs\Campaigns\Sashak_Drishti.png" alt="Bridge">
-                    </a>
-                </div> -->
-    
-            </div>
-    
-        </div>
-    
-    </div>    
+    <div class="block lg:hidden">
 
-    <!-- End of Campaign Section -->
+    <div class="intro">
+        <h1 class="font-semibold text-xl">CAMPAIGNS</h1>
+        <h1 class="text-sm">WE AIM TO SUSTAIN</h1>
+    </div>
+    <div class="gallery_container-all">
+        <div class="gallery_container">
+          <img src="assets\imgs\Campaigns\Adira.png" alt="Image description goes here">
+          <span class="gallery_title">Lorem ipsum dolor</span>
+          <span class="gallery_text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="gallery_container">
+          <img src="assets\imgs\Campaigns\Cognito.png" alt="Image description goes here">
+          <span class="gallery_title">Lorem ipsum dolor</span>
+          <span class="gallery_text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="gallery_container">
+          <img src="assets\imgs\Campaigns\Eudaimonia.png" alt="Image description goes here">
+          <span class="gallery_title">Lorem ipsum dolor</span>
+          <span class="gallery_text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="gallery_container">
+          <img src="assets\imgs\Campaigns\Inayat.png" alt="Image description goes here">
+          <span class="gallery_title">Lorem ipsum dolor</span>
+          <span class="gallery_text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="gallery_container">
+          <img src="assets\imgs\Campaigns\Pejas.png" alt="Image description goes here">
+          <span class="gallery_title">Lorem ipsum dolor</span>
+          <span class="gallery_text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+        <div class="gallery_container">
+          <img src="assets\imgs\Campaigns\Sashak_Drishti.png" alt="Image description goes here">
+          <span class="gallery_title">Lorem ipsum dolor</span>
+          <span class="gallery_text">Morbi diam viverra mattis sociis magna, habitasse penatibus non lectus</span>
+        </div>
+    </div>
+    </div>
+    <!-- End: Mobile Screen -->
 
-    <!-- Campaign 2 -->
-    <!-- <div class="owl-carousel">
-        <div id="f1_container">
-            <div id="f1_card" class="shadow">
-                <div class="front face">
-                    <img src="https://images.unsplash.com/photo-1537557132238-b136d7e758ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2a495234c0f5700a319077810cf04d0&auto=format&fit=crop&w=400&q=60" alt="test"/>
-                </div>
-                <div class="back face center">
-                    <h3> Header here </h3>
-                    <p>Any content can go here.</p>
-                </div>
-            </div>
-        </div>
-        <div id="f1_container">
-            <div id="f1_card" class="shadow">
-                <div class="front face">
-                    <img src="https://images.unsplash.com/photo-1537557132238-b136d7e758ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2a495234c0f5700a319077810cf04d0&auto=format&fit=crop&w=400&q=60" alt="test"/>
-                </div>
-                <div class="back face center">
-                    <h3> Header here </h3>
-                    <p>Any content can go here.</p>
-                </div>
-            </div>
-        </div>
-        <div id="f1_container">
-            <div id="f1_card" class="shadow">
-                <div class="front face">
-                    <img src="https://images.unsplash.com/photo-1537557132238-b136d7e758ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2a495234c0f5700a319077810cf04d0&auto=format&fit=crop&w=400&q=60" alt="test"/>
-                </div>
-                <div class="back face center">
-                    <h3> Header here </h3>
-                    <p>Any content can go here.</p>
-                </div>
-            </div>
-        </div>
-        <div id="f1_container">
-            <div id="f1_card" class="shadow">
-                <div class="front face">
-                    <img src="https://images.unsplash.com/photo-1537557132238-b136d7e758ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2a495234c0f5700a319077810cf04d0&auto=format&fit=crop&w=400&q=60" alt="test"/>
-                </div>
-                <div class="back face center">
-                    <h3> Header here </h3>
-                    <p>Any content can go here.</p>
-                </div>
-            </div>
-        </div>
-        <div id="f1_container">
-            <div id="f1_card" class="shadow">
-                <div class="front face">
-                    <img src="https://images.unsplash.com/photo-1537557132238-b136d7e758ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d2a495234c0f5700a319077810cf04d0&auto=format&fit=crop&w=400&q=60" alt="test"/>
-                </div>
-                <div class="back face center">
-                    <h3> Header here </h3>
-                    <p>Any content can go here.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End: Campaign 2 -->
-
-    <!-- Campaign-3 -->
+    <!-- Laptop Screen -->
+    <div class="hidden lg:block mt-10">
         <div>
             <h1 class="text-center font-bold text-3xl">CAMPAIGNS</h1>
-            <h1 class="text-center text-xl">WE AIM TO SUSTAIN</h1>
-            <div class=""></div>
+            <h1 class="text-center text-xl mb-10">WE AIM TO SUSTAIN</h1>
         </div>
-    <!-- End: Campaign 3 -->
+
+        <div class="main">
+            <div class="slider">
+              <div class="car">
+                <div class="card">
+                  <div class="card-header">
+          
+                    <img src="assets\imgs\Campaigns\Adira.png">
+                    <div id="" class="middle">
+                      <div class="text text-black ml-8">Adira</div>
+                    </div>
+                  </div>
+          
+                  <div class="card-body">
+                    <div class="card-content">
+                      <div class="card-title-2">Adira</div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="car">
+                <div class="card">
+                  <div class="card-header">
+          
+                    <img src="assets\imgs\Campaigns\Cognito.png">
+                    <div class="middle">
+                      <div class="text text-black ml-8">Cognito</div>
+                    </div>
+                  </div>
+          
+                  <div class="card-body">
+                    <div class="card-content">
+                      <div class="card-title-2">Cognito</div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="car">
+                <div class="card">
+                  <div class="card-header">
+          
+                    <img src="assets\imgs\Campaigns\Eudaimonia.png">
+                    <div class="middle">
+                      <div class="text text-black ml-8">Eudaimonia</div>
+                    </div>
+                  </div>
+          
+                  <div class="card-body">
+                    <div class="card-content">
+                      <div class="card-title-2">Eudaimonia</div>
+          
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+              <div class="car">
+                <div class="card">
+                  <div class="card-header">
+                    <img src="assets\imgs\Campaigns\Inayat.png">
+                    <div class="middle">
+                      <div class="text text-black ml-8">Inayat</div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+          
+                    <div class="card-content">
+                      <div class="card-title-2">Inayat</div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="car">
+                <div class="card">
+                  <div class="card-header">
+                    <img src="assets\imgs\Campaigns\Pejas.png">
+                    <div class="middle">
+                      <div class="text text-black ml-8">Pejas</div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+          
+                    <div class="card-content">
+                      <div class="card-title-2">Pejas</div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="car">
+                <div class="card">
+                  <div class="card-header">
+                    <img src="assets\imgs\Campaigns\Sashak_Drishti.png">
+                    <div class="middle">
+                      <div class="text text-black ml-8">Sashakt Drishti</div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-content">
+                      <div class="card-title-2">Sashakt Drishti
+                      </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div> 
+
+
+    <!-- End: Laptop Screen -->
+
+    <!-- End of Campaign Section -->
 
     <section id="contact" class="section has-img-bg pb-0">
         <div class="container">
@@ -1058,33 +872,104 @@ function callbackFunc() {
 
     </script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<!-- <script>
-    $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            center: true,
-            loop:true,
-            margin:10,
-            autoplay:true,
-            autoplayTimeout:2000,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:3,
-                    nav:true
-                },
-                1000:{
-                    items:5,
-                    nav:true
-                }
+    <!-- Blog Section -->
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
             }
-        })
-    })
-</script> -->
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 4000);
+          }
+          repeater();
+        }
+        repeat();
+        </script>
+    <!-- End: Blog Section -->
+
+    <!-- Campaign laptop Screen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js'></script>
+<script>
+
+  $('.slider').slick({
+    infinite: true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  })
+</script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62db887d91f1f924"></script>
+    <!-- End: Campaign Laptop Screen -->
 </body>
 </html>
