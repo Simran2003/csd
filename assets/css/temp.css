@@ -1,0 +1,46 @@
+.card2 {
+    position: relative;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 20px #ccc;
+  }
+  
+  .middle {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .card-body2 {
+    background: #fff;
+    width: 100%;
+    vertical-align: top;
+  }
+  
+  .card-content {
+    text-align: center;
+    color: #333;
+    padding: 15px;
+  }
+  
+  .card-text2 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .car:hover img {
+    opacity: 0.1;
+  }
+  
+  .card:hover .middle {
+    opacity: 3;
+  }
+  
+  .car:hover .middle {
+    /* background-color: #51cca0;
+    color: white; */
+    font-size: 16px;
+    position: absolute;
+    top: 47%;
+    padding: 10px 20px;
+    left: 35%;
+    visibility: visible;
+  }
