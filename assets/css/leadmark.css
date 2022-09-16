@@ -12507,7 +12507,7 @@ section#counter-stats {
 } */
 
 .slick-next:before {
-  content: "→";
+  content: '→';
 }
 
 .slick-prev,
@@ -12662,50 +12662,51 @@ section#counter-stats {
 }
 
 @media only screen and (max-width: 900px) {
-.intro {
-  margin-top: 40px;
-}
-.gallery_container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .intro {
+    margin-top: 40px;
+  }
+  .gallery_container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.campaign-laptop{
+.campaign-laptop {
   display: block;
+  padding: 35px;
 }
 
 @media only screen and (max-width: 900px) {
-  .campaign-laptop{
+  .campaign-laptop {
     display: none;
   }
 }
 
-.campaign-mobile{
+.campaign-mobile {
   display: block;
 }
 
 @media only screen and (min-width: 900px) {
-  .campaign-mobile{
+  .campaign-mobile {
     display: none;
   }
 }
 
-.campaign-head{
+.campaign-head {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
 }
 
-.campaign-subhead{
+.campaign-subhead {
   text-align: center;
   font-size: 15px;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 900px) {
-  .campaign-head{
+  .campaign-head {
     font-size: 20px;
   }
 }
