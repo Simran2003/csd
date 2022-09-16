@@ -527,7 +527,7 @@ h6,
 
 .gallery {
   margin: 0;
-  padding: 0;
+  padding: 50px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
@@ -540,9 +540,10 @@ h6,
 .img-slider {
   position: relative;
   width: 800px;
-  height: 450px;
-  margin: 10px;
+  height: 300px;
+  margin: 40px;
   background: #1d212b;
+  padding: 50px;
 }
 
 .img-slider .slide {
@@ -12593,8 +12594,8 @@ section#counter-stats {
 }
 
 .gallery_container-all {
-  width: 95%;
-  margin: 20px auto;
+  width: 85%;
+  margin: 25px auto;
   height: auto;
   margin-bottom: 40px;
 }
