@@ -12506,12 +12506,6 @@ section#counter-stats {
   font-weight: bold;
 } */
 
-.slide,
-img {
-  width: 100%;
-  height: 550px;
-}
-
 .slick-next:before {
   content: "→";
 }
@@ -12529,20 +12523,9 @@ img {
   left: 0 !important;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .main {
   width: 100%;
   text-align: center;
-}
-
-h2 {
-  font-family: sans-serif;
-  color: #fff;
 }
 
 .slider {
@@ -12558,7 +12541,7 @@ h2 {
   width: 100%;
 }
 
-.card {
+.card2 {
   position: relative;
   border: 2px solid #fff;
   box-shadow: 1px 1px 20px #ccc;
@@ -12569,7 +12552,7 @@ h2 {
   visibility: hidden;
 }
 
-.card-body {
+.card-body2 {
   background: #fff;
   width: 100%;
   vertical-align: top;
@@ -12581,7 +12564,7 @@ h2 {
   padding: 15px;
 }
 
-.card-text {
+.card-text2 {
   font-size: 14px;
   font-weight: 300;
 }
@@ -12590,13 +12573,11 @@ h2 {
   opacity: 0.1;
 }
 
-.card:hover .middle {
+.card2:hover .middle {
   opacity: 3;
 }
 
 .car:hover .middle {
-  /* background-color: #51cca0;
-  color: white; */
   font-size: 16px;
   position: absolute;
   top: 47%;
@@ -12631,7 +12612,7 @@ h2 {
   background-color: black;
 }
 
-img {
+.gallery_container img {
   width: 100%;
   transition-duration: 0.3s;
   max-width: 100%;
@@ -12689,4 +12670,42 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-}  
+}
+
+.campaign-laptop{
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .campaign-laptop{
+    display: none;
+  }
+}
+
+.campaign-mobile{
+  display: block;
+}
+
+@media only screen and (min-width: 900px) {
+  .campaign-mobile{
+    display: none;
+  }
+}
+
+.campaign-head{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.campaign-subhead{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+  .campaign-head{
+    font-size: 20px;
+  }
+}
