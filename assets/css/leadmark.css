@@ -12439,7 +12439,17 @@ textarea.form-control {
   font-weight: 500;
   opacity: 1;
 }
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 .portfolio-section .portfolio-container .portfolio-item:hover .content-holder {
   left: 50%;
   opacity: 1;
