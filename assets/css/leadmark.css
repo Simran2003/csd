@@ -11851,6 +11851,12 @@ textarea.form-control {
   margin: auto;
 }
 
+.punch {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
 .mouse-icon .wheel {
   position: relative;
   border-radius: 10px;
@@ -12439,14 +12445,14 @@ textarea.form-control {
   font-weight: 500;
   opacity: 1;
 }
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
