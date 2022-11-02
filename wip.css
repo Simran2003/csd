@@ -1,15 +1,15 @@
 body {
-  font-family: 'Karla', sans-serif;
-  background-image: url('./assets/imgs/csbg.jpg');
+  font-family: "Karla", sans-serif;
+  background-image: url("./assets/imgs/emp_bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #ffffff;
-  padding-bottom: 75px;
+  color: #1a1818;
+  padding-bottom: 0px;
 }
 @media (min-width: 768px) {
   body {
-    padding-bottom: 110px;
+    padding-bottom: 10px;
   }
 }
 
@@ -17,7 +17,7 @@ body {
   margin-right: 0;
 }
 .navbar-brand img {
-  height: 42px;
+  height: 60px;
 }
 
 .navbar-dark {
@@ -25,7 +25,7 @@ body {
   padding-bottom: 35px;
 }
 .navbar-dark .navbar-text {
-  color: #ffffff;
+  color: black;
   opacity: 1;
   padding: 0 20px;
   border-right: 1px solid #ffffff;
@@ -36,12 +36,21 @@ body {
 .navbar-dark .navbar-text:last-child {
   border-right: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 980px) {
   .navbar-dark {
     padding-bottom: 0;
   }
 }
 
+.my-auto {
+  margin-top: 50px;
+}
+
+.emp-font {
+  text-decoration: solid;
+  font-size: large;
+  padding-top: 20px;
+}
 .page-title {
   font-size: 80px;
   font-weight: bold;
@@ -64,10 +73,20 @@ body {
     font-size: 14px;
   }
 }
-
+.video {
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 p {
   font-size: 14px;
   margin-bottom: 21px;
+}
+
+.footer-social-links {
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .footer-social-links .social-link {
@@ -77,18 +96,31 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: white;
   color: #000000;
-  margin-right: 16px;
+  margin-right: 95px;
   transition: all 0.3s ease-in-out;
+  margin-left: 80px;
 }
 .footer-social-links .social-link:last-child {
-  margin-right: 0;
+  margin-right: 5px;
 }
 .footer-social-links .social-link:hover {
   text-decoration: none;
   background-color: #000000;
   color: #ffffff;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=bd-coming-soon.css.map */
