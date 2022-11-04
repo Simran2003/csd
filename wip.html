@@ -121,7 +121,7 @@
         <p>Stay connected</p> -->
       </div>
     </main>
-
+    <!-- 
     <footer class="container">
       <nav class="footer-social-links">
         <a
@@ -146,23 +146,23 @@
           <i class="mdi mdi-linkedin"></i>
         </a>
       </nav>
-    </footer>
+    </footer> -->
 
     <script>
-      window.addEventListener("scroll", reveal);
+      window.addEventListener('scroll', reveal)
 
       function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
+        var reveals = document.querySelectorAll('.reveal')
 
         for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight;
-          var revealTop = reveals[i].getBoundingClientRect().top;
-          var revealpoint = 150;
+          var windowHeight = window.innerHeight
+          var revealTop = reveals[i].getBoundingClientRect().top
+          var revealpoint = 150
 
           if (revealTop < windowHeight - revealpoint) {
-            reveals[i].classList.add("active");
+            reveals[i].classList.add('active')
           } else {
-            reveals[i].classList.remove("active");
+            reveals[i].classList.remove('active')
           }
         }
       }
