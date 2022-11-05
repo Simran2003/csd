@@ -19,28 +19,70 @@
     />
     <link rel="stylesheet" href="wip.css" />
   </head>
-  <body
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0"
     class="min-vh-100 d-flex flex-column"
     data-new-gr-c-s-check-loaded="14.1079.0"
     data-gr-ext-installed=""
   >
     <header>
-      <div class="container">
-        <nav class="navbar navbar-dark bg-transparent">
-          <a class="navbar-brand" href="./index.html">
-            <img src="assets/imgs/csd_logo.png" alt="logo" width="55px" />
+      <nav
+        class="navbar custom-navbar navbar-expand-md navbar-light fixed-top"
+        data-spy="affix"
+        data-offset-top="10"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/imgs/csd_logo.png" alt="" />
           </a>
-          <span class="navbar-text ml-auto d-none d-sm-inline-block">
-            011-41063127
-          </span>
-          <span class="navbar-text d-none d-sm-inline-block">
-            csdigdtuwtech@gmail.com
-          </span>
-        </nav>
-      </div>
+          <a class="navbar-brand" href="https://www.igdtuw.ac.in/">
+            <img src="assets/imgs/igdtuw_logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="#service">Our Service</a>
+                    </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">SDG Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="./wip.html" class="nav-link">EMP</a>
+            </li>
+            <li class="nav-item">
+              <a href="./wip.html" class="nav-link">Newsletter</a>
+            </li>
+            <!-- <li class="nav-item">
+                        <a href="#" class="ml-4 nav-link btn btn-primary btn-sm rounded">Meet the Team</a>
+                    </li> -->
+          </ul>
+          <!-- </div> -->
+        </div>
+      </nav>
     </header>
-    <main class="my-auto">
-      <div class="container">
+
+    <main class="my-auto" >
+      <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
         <section class="section" id="about">
           <div class="container">
             <div class="row justify-content-between">
@@ -121,7 +163,7 @@
         <p>Stay connected</p> -->
       </div>
     </main>
-    <!-- 
+
     <footer class="container">
       <nav class="footer-social-links">
         <a
@@ -146,23 +188,23 @@
           <i class="mdi mdi-linkedin"></i>
         </a>
       </nav>
-    </footer> -->
+    </footer>
 
     <script>
-      window.addEventListener('scroll', reveal)
+      window.addEventListener("scroll", reveal);
 
       function reveal() {
-        var reveals = document.querySelectorAll('.reveal')
+        var reveals = document.querySelectorAll(".reveal");
 
         for (var i = 0; i < reveals.length; i++) {
-          var windowHeight = window.innerHeight
-          var revealTop = reveals[i].getBoundingClientRect().top
-          var revealpoint = 150
+          var windowHeight = window.innerHeight;
+          var revealTop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
 
           if (revealTop < windowHeight - revealpoint) {
-            reveals[i].classList.add('active')
+            reveals[i].classList.add("active");
           } else {
-            reveals[i].classList.remove('active')
+            reveals[i].classList.remove("active");
           }
         }
       }

@@ -20,30 +20,18 @@ body {
   height: 60px;
 }
 
-.navbar-dark {
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-.navbar-dark .navbar-text {
-  color: black;
-  opacity: 1;
-  padding: 0 20px;
-  border-right: 1px solid #ffffff;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}
-.navbar-dark .navbar-text:last-child {
-  border-right: 0;
-}
-@media (max-width: 980px) {
-  .navbar-dark {
-    padding-bottom: 0;
-  }
+.my-auto {
+  margin-top: 100px;
+  padding-top: 140px;
+  display: block;
 }
 
-.my-auto {
-  margin-top: 50px;
+.section {
+  display: block;
+}
+.navbar-nav {
+  color: #000000;
+  font-size: large;
 }
 
 .emp-font {
