@@ -446,11 +446,11 @@ h5,
   }
 
   .item-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .item-text {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .item-link:link,
@@ -471,7 +471,7 @@ h5,
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
   }
 }
 
